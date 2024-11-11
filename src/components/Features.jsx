@@ -1,4 +1,10 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
+
 const Features = () => {
+
+    const {isDarkMode} = useDarkMode();
+
   return (
     <>
         <section className="container grid lg:grid-cols-[1fr_2fr] gap-8 mb-12 md:mb-28">
@@ -16,42 +22,42 @@ const Features = () => {
                             <img src="src\assets\img\paymentCardIcon.svg" alt="Icon of a bank card referencing to Easy payments" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Easy Payments</h3>
-                                <p>Make quick and secure payments with just a few taps, simplifying your daily transactions.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Make quick and secure payments with just a few taps, simplifying your daily transactions.</p>  
                             </div>
                         </li>
                         <li className="flex items-start gap-6">
                             <img src="src\assets\img\DataSecurityIcon.svg" alt="icon of a shield referencing to data security" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Data Security</h3>
-                                <p>Your personal data is safeguarded with advanced encryption, ensuring a secure banking experience.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Your personal data is safeguarded with advanced encryption, ensuring a secure banking experience.</p>  
                             </div>
                         </li>
                         <li className="flex items-start gap-6">
                             <img src="src\assets\img\StatisticsIcon.svg" alt="icon of statistics referencing to Cost statistics" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Cost Statistics</h3>
-                                <p>Get clear insights into your spending habits, helping you stay on top of your finances.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Get clear insights into your spending habits, helping you stay on top of your finances.</p>  
                             </div>
                         </li>
                         <li className="flex items-start gap-6">
                             <img src="src\assets\img\SupportIcon.svg" alt="Support Icon referencing to Support 24/7" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Support 24/7</h3>
-                                <p>Our support team is available anytime, providing help whenever you need it, day or night.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Our support team is available anytime, providing help whenever you need it, day or night.</p>  
                             </div>
                         </li>
                         <li className="flex items-start gap-6">
                             <img src="src\assets\img\CashbackIcon.svg" alt="Icon of wallet referencing to regular cashback" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Regular Cashback</h3>
-                                <p>Enjoy cashback on your purchases, giving you savings and rewards as you shop.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Enjoy cashback on your purchases, giving you savings and rewards as you shop.</p>  
                             </div>
                         </li>
                         <li className="flex items-start gap-6 ">
                             <img src="src\assets\img\TopStandardsIcon.svg" alt="icon of a happy smiley referencing to top standards" />
                             <div className="flex flex-col gap-4">
                                 <h3 className="text-h3-sm font-extrabold">Top Standards</h3>
-                                <p>We maintain top standards in all services, delivering a consistently premium user experience.</p>  
+                                <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>We maintain top standards in all services, delivering a consistently premium user experience.</p>  
                             </div>
                         </li>
                     </ul>

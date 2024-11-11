@@ -1,8 +1,11 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
 const Subscribe = () => {
+    const { isDarkMode } = useDarkMode();
   return (
     <>
-        <section className="container">
-            <div className="bg-[#F3F6FF]  pt-16 pb-16 rounded-lg">
+        <section className={`${isDarkMode ? 'bg-white bg-opacity-5' : 'bg-[#F3F6FF]'} container`}>
+            <div className="pt-16 pb-16 rounded-lg">
                 <div className="grid grid-cols-[auto_auto_1fr] md:grid-cols-[auto_auto_1fr] gap-10 items-center  justify-center max-w-[85%] mx-auto">
                     <div className="items-center justify-center">
                         <img src="src\assets\img\notification.svg" alt="Image of a bell referencing to subscribing for notifications" />

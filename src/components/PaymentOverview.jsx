@@ -1,4 +1,8 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
 const PaymentOverview = () => {
+    const { isDarkMode } = useDarkMode();
+
   return (
     <>
         <section className="hidden lg:block py-32">
@@ -7,11 +11,11 @@ const PaymentOverview = () => {
                     <div className="flex flex-col items-start gap-10">
                         <h3 className="text-h3 font-extrabold">Make your money <br /> transfer simple and clear</h3>
                         <div className="flex flex-col gap-4">
-                            <span className="flex gap-2 items-center"><i className="fa-sharp fa-light fa-circle-check text-primary"></i> Banking transactions are free or you</span>
+                            <span className={`flex gap-2 items-center ${isDarkMode ? 'text-dimmedText' : ''}`}><i className="fa-sharp fa-light fa-circle-check text-primary"></i> Banking transactions are free or you</span>
                             
-                            <span className="flex gap-2 items-center"><i className="fa-sharp fa-light fa-circle-check text-primary"></i> No monthly cash commission</span>
+                            <span className={`flex gap-2 items-center ${isDarkMode ? 'text-dimmedText' : ''}`}><i className="fa-sharp fa-light fa-circle-check text-primary"></i> No monthly cash commission</span>
                             
-                            <span className="flex gap-2 items-center"><i className="fa-sharp fa-light fa-circle-check text-primary"></i> Manage payments and transactions online</span>
+                            <span className={`flex gap-2 items-center ${isDarkMode ? 'text-dimmedText' : ''}`}><i className="fa-sharp fa-light fa-circle-check text-primary"></i> Manage payments and transactions online</span>
                         </div>
                         <a href="#" className="btn-primary hidden  lg:block px-6 py-3">
                             <span className="text-sm font-semibold mr-2">Learn more</span>
@@ -33,13 +37,13 @@ const PaymentOverview = () => {
                                 <span className="flex items-center justify-center w-12 h-12 bg-[rgba(99,102,241,0.08)] rounded-lg">
                                     <img className="w-6 h-6" src="src\assets\img\BankCardIcon.svg" alt="Icon of a bank card referencing to managing payments easy online" />
                                 </span>
-                                <span className="flex-1">Manage your payments online. Lorem ipsum dolor sit amet consectetur</span> 
+                                <span className={`flex-1 ${isDarkMode ? 'text-dimmedText' : ''}`}>Manage your payments online. Lorem ipsum dolor sit amet consectetur</span> 
                             </div>
                             <div className="flex flex-col gap-4">
                                 <span className="flex items-center justify-center w-12 h-12 bg-[rgba(99,102,241,0.08)] rounded-lg">
                                     <img className="w-6 h-6" src="src\assets\img\WalletIcon.svg" alt="Icon of a wallet referencing to easily checking your balance" />
                                 </span>
-                                <span className="flex-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus culpa alias</span> 
+                                <span className={`flex-1 ${isDarkMode ? 'text-dimmedText' : ''}`}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus culpa alias</span> 
                             </div>
                         </div>
                         <a href="#" className="btn-primary hidden lg:block px-6 py-3">

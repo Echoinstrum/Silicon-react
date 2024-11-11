@@ -1,7 +1,11 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
 const Guide = () => {
+
+    const { isDarkMode } = useDarkMode();
   return (
     <>
-        <section className="bg-[#F3F6FF]">
+        <section className="">
             <div className="container grid gap-10 text-center justify-center">
                 <div className="pt-16">
                         <h1 className="text-h1">How Does It Work?</h1>
@@ -18,7 +22,7 @@ const Guide = () => {
                     <h3 className="text-h3-sm font-extrabold sm:block md:hidden">Transfers to people from your contact list</h3>
                     <h3 className="text-h3 font-extrabold hidden md:block lg:hidden">Step 3. Transfers to people from your contact list</h3>
                     <h3 className="text-h3 font-extrabold hidden lg:block">Latest transaction history</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, repellat modi optio dolorem amet possimus sunt.</p>
+                    <p className={`${isDarkMode ? 'text-dimmedText' : ''}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, repellat modi optio dolorem amet possimus sunt.</p>
                 </div>
             </div>
         </section>

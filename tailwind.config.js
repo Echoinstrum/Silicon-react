@@ -31,6 +31,9 @@ export default {
         },
         // Fick hjälp av c-gpt hur man satte up flera egna "defaults" för olika element här.
       },
+      textColor: {
+        dimmedText: 'rgba(255, 255, 255, 0.7)'
+      },
       container: { // Anpassad container
         center: true,
         padding: "1rem",
@@ -53,7 +56,8 @@ export default {
       },
 
       backgroundImage: {
-        "custom-gradient": "linear-gradient(0deg, rgba(99,102,241,0.099) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%)"
+        "custom-gradient": "linear-gradient(0deg, rgba(99,102,241,0.099) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%)",
+        "custom-gradient-dark-mode": "linear-gradient(0deg, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);",
       },
       gridTemplateAreas: {
         // Definiera layouten

@@ -1,4 +1,9 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
 const Faq = () => {
+    const { isDarkMode } = useDarkMode();
+    
+
     return (
       <>
           <section className="container pt-12 pb-10 md:pt-12 md:pb-8 lg:py-24 ">
@@ -10,13 +15,13 @@ const Faq = () => {
                   <div className="contact hidden md:flex gap-7 lg:mb-36 max-h-36 flex-shrink">
                       <div className="flex flex-col gap-3 border rounded-lg p-3 flex-grow">
                           <i className="fa-solid fa-phone-volume text-primary text-2xl"></i>
-                          <span className="text-sm text-[#565973]">Still have questions?</span>
+                          <span className={` ${isDarkMode ? 'text-dimmedText' : 'text-[#565973]'} text-sm`}>Still have questions?</span>
                           <span className="flex gap-3 items-center text-primary font-semibold">Contact us<i className="fa-regular fa-arrow-right"></i></span>
   
                       </div>
                       <div className="flex flex-col gap-3 border rounded-lg p-3 flex-grow">
                           <i className="fa-solid fa-comment text-[#22C55E] text-2xl"></i>
-                          <span className="text-sm text-[#565973]">Don&#39;t like phone calls?</span>
+                          <span className={` ${isDarkMode ? 'text-dimmedText' : 'text-[#565973]'} text-sm`}>Don&#39;t like phone calls?</span>
                           <span className="flex gap-3 items-center text-[#22C55E] font-semibold">Contact us<i className="fa-regular fa-arrow-right"></i></span>
                       </div>
                   </div>

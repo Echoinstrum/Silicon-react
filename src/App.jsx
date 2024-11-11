@@ -10,20 +10,27 @@ import PaymentOverview from './components/PaymentOverview'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 
+import { useDarkMode } from './context/DarkModeContext'
+
 function App() {
+  const { isDarkMode } = useDarkMode();
 
   return (
     <>
-      <body className='font-sans'>
+      <body className={`${isDarkMode ? 'bg-gray-900 text-white' : ''} font-sans`}>
         <div className='bg-custom-gradient mb-12'>
           <Header />
           <Hero />
         </div>
         <Brands />
         <Features />
+        <div className={`${isDarkMode ? 'bg-white bg-opacity-5' : 'bg-[#F3F6FF]'}`}>
         <Guide />
+        </div>
         <PaymentOverview />
+        <div className={`${isDarkMode ? 'bg-white bg-opacity-5' : 'bg-[#F3F6FF]'}`}>
         <Testimonials />
+        </div>
         <Faq />
         <Subscribe />
         <Footer />

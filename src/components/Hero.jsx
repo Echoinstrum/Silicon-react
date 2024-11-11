@@ -18,8 +18,8 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className="relative grid-in-images hidden md:block">
-                    <img className="absolute -z-10 bottom-0 right-0 w-[70%] lg:w-[65%]" src="src\assets\img\iPhone 12 Pro creditcards.svg" alt="Image of Iphone showing the cards look in app" />
-                    <img className="absolute -z-20 bottom-0 right-[120px] lg:right-56 w-[70%] lg:w-[65%]" src="src\assets\img\iPhone 12 Pro budget.svg" alt="Image of Iphone showing how the budget look in app" />
+                    <img className="absolute z-20 bottom-0 right-0 w-[70%] lg:w-[65%]" src="src\assets\img\iPhone 12 Pro creditcards.svg" alt="Image of Iphone showing the cards look in app" />
+                    <img className="absolute z-10 bottom-0 right-[120px] lg:right-56 w-[70%] lg:w-[65%]" src="src\assets\img\iPhone 12 Pro budget.svg" alt="Image of Iphone showing how the budget look in app" />
                 </div>
             </div>
         </section>
