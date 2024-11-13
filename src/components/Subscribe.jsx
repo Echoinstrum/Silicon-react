@@ -14,9 +14,9 @@ const Subscribe = () => {
                         <h4 className="text-h4-sm font-extrabold">Subscribe to our <br className="lg:hidden" />newsletter<span className="hidden lg:inline"> to stay <br />informed about latest updates</span></h4>
                     </div>
                     <form className="flex items-center justify-center col-start-1 col-end-4 md:col-auto">
-                        <div className="flex relative w-full lg:w-[90%]">
+                        <div className="flex relative w-full lg:w-[90%] border-solid border-white">
                             <i className="flex absolute items-center inset-y-0 pl-2 fa-light fa-envelope"></i>
-                            <input className="block p-3 pl-10 w-full text-sm rounded-s-lg" type="text" placeholder="Your mail" />
+                            <input className={`block p-3.5 pl-10 w-full text-sm rounded-s-lg border border-gray-400 ${isDarkMode ? 'bg-white bg-opacity-0 border border-white border-opacity-15' : ''}`} type="text" placeholder="Your mail" />
                             <button className="btn-primary rounded-s-none">Subscribe</button>
                         </div>
                     </form>

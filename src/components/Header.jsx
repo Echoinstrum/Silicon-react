@@ -7,7 +7,7 @@ const Header = () => {
             <div className="items-center grid grid-cols-[1fr_auto_auto] lg:grid-cols-[1fr_auto_auto_auto] py-2 md:py-8">
                 <div className="flex items-center gap-12">
                     <a href="index.html">
-                        <img src="src\assets\img\siliconLogo.svg" alt="Silicon logo" />
+                        <img src={`${isDarkMode ? 'src/assets/img/siliconLogo-darktheme.svg' : 'src/assets/img/siliconLogo.svg'} `} alt="Silicon logo" />
                     </a>
                     <nav className="font-semibold hover:text-primary hover:underline active:text-primary active:underline">
                         <a href="#" className="hidden lg:block">Features</a>
