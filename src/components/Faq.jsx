@@ -23,7 +23,6 @@ const Faq = () => {
         getFaqData();
     }, [])
 
-
     return (
       <>
           <section className="container pt-12 pb-10 md:pt-12 md:pb-8 lg:py-24 ">
