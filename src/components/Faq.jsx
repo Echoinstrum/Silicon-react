@@ -32,13 +32,13 @@ const Faq = () => {
                       <p className={`${isDarkMode ? 'text-white text-opacity-70' : ''} text-[#565973] text-[18px] w-[85%] md:w-[55%] lg:w-[100%] mx-auto lg:mx-0`}>Still have unanswered questions and need to get in touch?</p>
                   </div>
                   <div className="contact hidden md:flex gap-7 lg:mb-36 max-h-36 flex-shrink">
-                      <div className={`${isDarkMode ? 'border-white border-opacity-15' : ''} flex flex-col gap-3 border rounded-lg p-3 flex-grow`}>
+                      <div className={`${isDarkMode ? 'border-white border-opacity-15' : ''} flex flex-col gap-y-3 border rounded-lg p-3 flex-grow`}>
                           <i className="fa-solid fa-phone-volume text-primary text-2xl"></i>
                           <span className={` ${isDarkMode ? 'text-dimmedText' : 'text-[#565973]'} text-sm`}>Still have questions?</span>
                           <span className="flex gap-3 items-center text-primary font-semibold">Contact us<i className="fa-regular fa-arrow-right"></i></span>
   
                       </div>
-                      <div className={`${isDarkMode ? 'border-white border-opacity-15' : ''} flex flex-col gap-3 border rounded-lg p-3 flex-grow`}>
+                      <div className={`${isDarkMode ? 'border-white border-opacity-15' : ''} flex flex-col gap-y-3 border rounded-lg p-3 flex-grow`}>
                           <i className="fa-solid fa-comment text-[#22C55E] text-2xl"></i>
                           <span className={` ${isDarkMode ? 'text-dimmedText' : 'text-[#565973]'} text-sm`}>Don&#39;t like phone calls?</span>
                           <span className="flex gap-3 items-center text-[#22C55E] font-semibold">Contact us<i className="fa-regular fa-arrow-right"></i></span>
