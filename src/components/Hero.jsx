@@ -1,4 +1,9 @@
+import { useDarkMode } from "../context/DarkModeContext"
+
 const Hero = () => {
+
+    const { isDarkMode } = useDarkMode();
+
   return (
     <main className="container">
         <section className="pb-5 md:p-0 mt-6">
@@ -13,8 +18,8 @@ const Hero = () => {
                         <a className="btn-black"  href="#"><img className="mx-auto"  src="src\assets\img\googleplay-light.svg.svg" alt="Google Play download button" /></a>
                     </div>
                     <a className="flex justify-center md:justify-start gap-4 items-center">
-                        <span className="flex justify-center items-center border-solid rounded-full h-12 w-12 bg-white lg:mt-16"><i className="fa-solid fa-angle-down"></i></span>
-                        <span className=" lg:mt-16">Discover more</span>
+                        <span className={`flex justify-center items-center border-solid rounded-full h-12 w-12 bg-white lg:mt-16 ${isDarkMode ? 'bg-white bg-opacity-5' : ''}`}><i className="fa-solid fa-angle-down"></i></span>
+                        <span className={`lg:mt-16 ${ isDarkMode ? 'text-dimmedText' : '' }`}>Discover more</span>
                     </a>
                 </div>
                 <div className="relative grid-in-images hidden md:block">

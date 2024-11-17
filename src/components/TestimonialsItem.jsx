@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+//körde disable på eslint react props då det gav errors om "missing props hela tiden" hittade lösningen på StackOverlow av användaren Gyandeep, och editerad av Kevin Ghadyani
+
 import { useDarkMode } from "../context/DarkModeContext"
 import StarRating from "./StarRating";
 
